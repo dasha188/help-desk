@@ -23,11 +23,16 @@ public class TicketController {
         this.ticketService = ticketService;
     }
 
+    //@GetMapping
+    //public String showTickets(Model model) {
+        //model.addAttribute("tickets", ticketService.getAllTickets());
+        //return "tickets";
+    //}
     @GetMapping
-    public String showTickets(Model model) {
-        model.addAttribute("tickets", ticketService.getAllTickets());
-        return "tickets";
+    public String redirectToAdmin() {
+        return "redirect:/admin/tickets";
     }
+
 
     @GetMapping("/new")
     public String showCreateForm(Model model) {

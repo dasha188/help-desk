@@ -18,13 +18,12 @@
             <a class="nav-link" th:href="@{/about}">О нас</a>
             <a class="nav-link" th:href="@{/contacts}">Контакты</a>
             <a class="nav-link" href="/tickets">Заявки</a>
+            <a class="nav-link" th:href="@{/admin/tickets}">Админ-панель</a>
+            <a class="nav-link" th:href="@{/tickets/new}" >Создать заявку</a>
+            <a class="nav-link" th:href="@{/login}" >Войти как администратор </a>
         </div>
     </div>
 </nav>
-
-<a th:href="@{/tickets/new}" class="btn btn-primary btn-lg">
-    Создать заявку
-</a>
 
 <main class="container py-5">
     <section class="hero-card p-5 rounded-4 border shadow-sm">
